@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script|Open+Sans:300,400italic,800italic,400,800);
+
+/* BASE STYLES */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #03169a;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* container */
+
+.container {
+  width: 95%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+#header {
+  margin-top: 2rem;
+}
+
+#header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo .logo-over {
+  margin-left: 30px;
+  padding: 0.35em;
+  font-family: "Oleo Script";
+  font-size: 3em;
+  border-radius: 20px;
+  background-color: white;
+  color: rgb(195, 193, 193);
+}
+
+#logo .logo-under {
+  margin-left: 2em;
+  font-weight: 800;
+  color: rgb(195, 193, 193);
+}
+
+/* NAV */
+
+#navbar > .navul {
+  display: flex;
+}
+
+#navbar li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 800;
+}
+
+#navbar a {
+  display: block;
+  padding: 0.6em;
+  border-radius: 10px;
+  color: rgb(195, 193, 193);
+}
+
+/* MAIN */
+
+#main {
+  line-height: 1.5;
+  width: 95%;
+  margin: auto;
+}
+
+/* BANNER */
+
+.banner {
+  line-height: 1.2;
+  margin: 2em 0;
+}
+
+.banner > .div-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em;
+  border-radius: 10px;
+  border-bottom: 3px solid #ddd;
+  background-image: url(https://www.rappler.com/tachyon/2022/07/solo-leveling.jpeg);
+  width: 100%;
+}
+.banner .banner-text {
+  width: 60%;
+}
+
+.banner h2 {
+  margin-bottom: 0.3em;
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(195, 193, 193);
+}
+.banner h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgb(195, 193, 193);
+}
+
+.banner .button {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.banner .button a {
+  display: block;
+  width: 100%;
+  margin: 0.2em 0;
+  padding: 0.5em;
+  font-weight: 800;
+  font-size: 2.25rem;
+  border-radius: 10px;
+}
+
+.banner .button a:first-child {
+  color: #fff;
+  background: #7000c5;
+}
+
+.banner .button a:last-child {
+  color: #7000c5;
+  background: #f1f1f1;
+}
+
+/* PANELS */
+
+.panels {
+  margin: 2rem 0;
+}
+
+.panels > .div-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel {
+  width: 30%;
+  background: rgb(8, 8, 8);
+  color: #696969;
+  border-bottom: 3px solid rgb(43, 43, 43);
+  border-radius: 10px;
+  line-height: 2;
+}
+
+.panel-content {
+  padding: 2em;
+}
+
+.panel h4 {
+  font-weight: 800;
+}
+
+/* images */
+
+.panel .panel-thumbnail {
+  min-height: 300px;
+  background-size: cover;
+  background-position: center middle;
+}
+
+.panel:first-child .panel-thumbnail {
+  background-image: url(https://i.insider.com/5e820b04671de06758588fb8?width=700);
+}
+
+.panel:nth-child(2) .panel-thumbnail {
+  background-image: url(https://assets3.thrillist.com/v1/image/3055763/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70);
+}
+
+.panel:last-child .panel-thumbnail {
+  background-image: url(https://i.ytimg.com/vi/SWRUnpHU7yw/maxresdefault.jpg);
+}
+
+.feature {
+  border-radius: 10px;
+  border-bottom: 3px solid #ddd;
+  background: #efbbb8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  font-size: 30px;
+  padding: 60px;
+  margin: 60px;
+}
+
+.feature-text {
+  width: 100%;
+  margin: 20px;
+}
+
+.feature-image {
+  width: 500px;
+  height: 500px;
+}
+.feature2 {
+  border-radius: 10px;
+  border-bottom: 3px solid #ddd;
+  background: #FBE55E;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  font-size: 30px;
+  padding: 60px;
+  margin: 60px;
+}
+
+.feature-text2 {
+  width: 100%;
+  margin: 20px;
+}
+
+.feature-image2 {
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+.panels2 {
+  margin: 2rem 0;
+}
+
+.panels2 > .div-panel2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel2 {
+  width: 45%;
+  margin: auto;
+  background: #c10c94;
+  color: #f5f4f4;
+  border-bottom: 3px solid rgb(43, 43, 43);
+  border-radius: 10px;
+  line-height: 2;
+}
+
+.panel-content2 {
+  padding: 2em;
+}
+
+.panel2 h4 {
+  font-weight: 800;
+}
+
+/* images */
+
+.panel2 .panel-thumbnail2 {
+  min-height: 300px;
+  background-size: cover;
+  background-position: center middle;
+}
+
+.panel2:first-child .panel-thumbnail2 {
+  background-image: url(https://cdn.oneesports.gg/cdn-data/2022/08/MobPsycho100_S2_Mob100-1.jpg);
+}
+
+.panel2:nth-child(2) .panel-thumbnail2 {
+  background-image: url(https://decider.com/wp-content/uploads/2019/05/one-punch-man-season-2-episode-6.jpg?quality=75&strip=all&w=646&h=431&crop=1);
+}
+footer{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 0;
+  margin-top: 90px;
+  color: rgb(195, 193, 193);
+  padding: 30px 40px;
+}
